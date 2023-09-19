@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,500;1,700&display=swap');
+
+/* font-family: 'Lato', sans-serif; -- Paragraphs
+font-family: 'Montserrat', sans-serif; -- Heading */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+/* Header */
+#all_nav {
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  padding: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+
+/* Name of the fundation */
+#title {
+  margin-left: 1.875rem;
+  font-size: 30px;
+  font-weight: 500;
+  color: #228C22;
+}
+
+#title:hover {
+  color: #668D2E;
+  cursor: pointer;
+}
+
+#title span {
+  font-size: 30px;
+  font-weight: 500;
+  color: #333333;
+}
+
+#title span:hover {
+  cursor: pointer;
+}
+
+/* header components */
+
+/* .bg-light{
+  background-color: transparent !important;
+} */
+
+#components .nav-link {
+  color: #333333;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0 25px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#components .nav-link.active {
+  font-weight: bold;
+}
+
+#components .nav-link:hover {
+  color: #668D2E;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+/* Dropdown  */
+
+#navbarNavAltMarkup {
+  margin-left: 1.875rem;
+}
+
+/* Donate button */
+
+#nav_button {
+  margin-left: 17px;
+  padding: auto;
+  width: auto;
+  text-align: center;
+  background-color: #228C22;
+  color: white;
+  border: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+#nav_button:hover {
+  color: #333333;
+  transform: scale(1.1);
+  background-color: #668D2E;
+}
+
+
+/* Home */
+
+/* Carousel */
+
+.carousel-inner img {
+  height: 650px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.carousel-item {
+  /* height: 50vh; */
+  min-height: 300px;
+}
+
+.carousel-caption {
+  bottom: 70px
+}
+
+.carousel-caption h5 {
+  font-size: 45px;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+  font-family: 'Lato', sans-serif;
+}
+
+.carousel-caption button {
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #228C22;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  color: white;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10%;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-caption button:hover {
+  color: #333333;
+  transform: scale(1.1);
+  background-color: #668D2E;
+
+}
+
+
+
+/* About Us */
+
+
+.row h1 {
+
+  padding: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+}
+
+#about_content {
+  justify-content: left;
+  padding-bottom: 30px;
+
+}
+
+#about_content h3 {
+  padding: 0px 0px 40px 0px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333333;
+  text-align: left;
+
+
+}
+
+#about_content p {
+  padding: 0px 0px 10px 0px;
+  font-size: 18px;
+  font-weight: 200;
+  color: #333333;
+  text-align: justify center;
+}
+
+#about_content img {
+  overflow: hidden;
+  border: 1px solid #bcbcbc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+#About_primary {
+  display: flex;
+  justify-content: center;
+}
+
+/* Areyounature */
+
+.parallax {
+  min-height: 300px;
+  background-image: url(https://i.pinimg.com/564x/84/d2/aa/84d2aa08bbf48f92728a5409cae66fb1.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 500px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* Center text within the container */
+}
+
+@media (max-width: 768px) {
+  .parallax {
+    height: 300px;
+  }
+
+  .parallax h5 {
+    font-size: 30px;
+  }
+}
+
+.parallax h5 {
+  font-size: 45px;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  line-height: 1.9;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.parallax p {
+  font-size: 18px;
+  line-height: 1.9;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 400;
+}
+
+.parallax button {
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #228C22;
+  padding: 10px 20px;
+  display: inline-block;
+  color: white;
+  font-weight: 500;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10%;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.parallax button:hover {
+  color: #333333;
+  transform: scale(1.1);
+  background-color: #668D2E;
+  cursor: pointer;
+
+}
+
+/* Doing */
+
+#doing_heading{
+  font-size: 30px;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+}
+
+.custom-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s; 
+}
+
+.custom-card:hover {
+  transform: translateY(-5px) scale(1); 
+  box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+.custom-card img {
+  max-width: 100%;
+  height: 350px;
+}
+
+#doing_heading h5 {
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #333333;
+  border-bottom: 2px solid #333333; 
+  display: inline-block; 
+  padding-bottom: 5px; 
+}
+
+#doing_heading p {
+  padding: 5px;
+  font-size: 18px;
+  line-height: 1.9;
+  font-family: 'Lato', sans-serif;
+  color: #333333;
+  justify-content: center;
+}
+
