@@ -3,6 +3,7 @@ import Carousel from './Carousel'
 import About from './About'
 import Areyounature from './Areyounature'
 import Doing from './Doing'
+import Happy from './Happy'
 function Home() {
   return (
     <>
@@ -10,6 +11,7 @@ function Home() {
       <About/>
       <Areyounature/>
       <Doing/>
+      <Happy/>
     </>
   )
 }
