@@ -327,3 +327,33 @@ font-family: 'Montserrat', sans-serif; -- Heading */
 /* Happy */
 
 
+/* BACKTOTOP */
+
+.back-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 999;
+  background-color: #228C22;
+  color:#ffffff;
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.625rem 1rem;
+  cursor: pointer;
+  font-size: x-large;
+
+}
+
+.back-to-top-button:hover{
+  background-color: #668D2E;
+  color: #333333;
+}
+
+.back-to-top-button.visible {
+  display: block;
+}
+
+.back-to-top-button.hidden {
+  display: none;
+}
