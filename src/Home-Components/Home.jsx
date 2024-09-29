@@ -1,17 +1,14 @@
 import React from 'react'
 import Carousel from './Carousel'
-import About from './About'
-import Areyounature from './Areyounature'
-import Doing from './Doing'
-import Happy from './Happy'
+import ServiceFeatures from './ServiceFeature'
+import OfficeStationery from './OfficeStationery'
+
 function Home() {
   return (
     <>
-      <Carousel/>
-      <About/>
-      <Areyounature/>
-      <Doing/>
-      <Happy/>
+     <Carousel/>
+     <ServiceFeatures/>
+     <OfficeStationery/>
     </>
   )
 }

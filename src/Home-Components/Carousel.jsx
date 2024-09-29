@@ -1,53 +1,52 @@
-import React from 'react'
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
 
-function Carousel() {
-    return (
-        <>
-            <div id="carouselExampleCaptions" className="carousel slide">
-                <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={0} className="active" aria-current="true" aria-label="Slide 1" />
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={1} aria-label="Slide 2" />
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={2} aria-label="Slide 3" />
-                </div>
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src="https://c1.wallpaperflare.com/preview/362/282/532/field-agriculture-earth.jpg" className="d-block w-100" alt="..." />
-                        <div className="carousel-caption">
-                            <h5>Lorem, ipsum.</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In est explicabo iusto debitis quaerat illo?</p>
-                            <p><button>Plant A Tree</button></p>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="https://c1.wallpaperflare.com/preview/532/665/142/electricity-sun-wind-forces-of-nature.jpg" className="d-block w-100" alt="..." />
-                        <div className="carousel-caption">
-                            <h5>lorem, ipsum</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore eveniet ea quisquam quod distinctio. Et.</p>
-                            <p><button>Plant A Tree</button></p>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="..." className="d-block w-100" alt="..." />
-                        <div className="carousel-caption">
-                            <h5>Lorem, ipsum. </h5>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem deserunt magnam, voluptatem consequatur dolores excepturi.</p>
-                            <p><button>Plant A Tree</button></p>
-                        </div>
-                    </div>
-                </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true" />
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true" />
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
+const HomeCarousel = () => {
+  return (
+    <Carousel>
+      {/* Slide 1 */}
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="../Images/bg-1.webp"
+          alt="Discover Premium Stationery Supplies"
+        />
+        <Carousel.Caption>
+          <h5>Discover Premium <br/>Stationery Supplies</h5>
+          <p>Elevate Your Office and Creative Projects with Our High-Quality, Eco-Friendly Products.</p>
+          <p><a href="shop.html" id = 'btn-discover' className="btn btn-primary">Discover Now</a></p>
+        </Carousel.Caption>
+      </Carousel.Item>
 
+      {/* Slide 2 */}
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="../Images/bg-2.webp"
+          alt="Quality Writing Instruments"
+        />
+        <Carousel.Caption>
+          <h5>Quality Writing <br/>Instruments</h5>
+          <p>We offer a full range of Radius pens, Pencils, and Geometry Boxes.</p>
+          <p><a href="about.html"  id = 'btn-discover' className="btn btn-primary">Discover Now</a></p>
+        </Carousel.Caption>
+      </Carousel.Item>
 
-        </>
-    )
-}
+      {/* Slide 3 */}
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="../Images/bg-3.webp"
+          alt="Office Stationery Supplies"
+        />
+        <Carousel.Caption>
+          <h5>Office Stationery <br/>Supplies</h5>
+          <p>Get all your stationery items here.</p>
+          <p><a href="about.html" id = 'btn-discover' className="btn btn-primary">Discover Now</a></p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
+};
 
-export default Carousel
+export default HomeCarousel;
